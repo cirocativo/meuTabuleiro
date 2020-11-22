@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.mysmartchess.AppActivity"
+    tools:showIn="@layout/activity_app">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/tabuleiro"
+            android:layout_width="410dp"
+            android:layout_height="410dp"
+
+            android:background="@drawable/tabuleiro" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewJogadorBrancas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textAlignment="viewStart"
+                android:text="white player" />
+
+            <TextView
+                android:id="@+id/textViewJogadorNegras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textAlignment="viewEnd"
+                android:text="black player" />
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lanceEditText"
+            />
+
+        <Button
+            android:id="@+id/vaiButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onVaiClicked"
+            android:text="Fazer lance" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Engine"
+                android:onClick="onEngineClicked"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online (Lichess)"
+                android:onClick="onLichessClicked"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- PEÇAS PRETAS MAIORES -->
+
+    <ImageView
+        android:id="@+id/pecatorrepreto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/torre_preto" />
+
+    <ImageView
+        android:id="@+id/pecacavalopreto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cavalo_preto" />
+
+    <ImageView
+        android:id="@+id/pecabispopreto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bispo_preto" />
+
+    <ImageView
+        android:id="@+id/pecadamapreto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dama_preto" />
+
+    <ImageView
+        android:id="@+id/pecareipreto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rei_preto" />
+
+    <ImageView
+        android:id="@+id/pecabispopreto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bispo_preto" />
+
+    <ImageView
+        android:id="@+id/pecacavalopreto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cavalo_preto" />
+
+    <ImageView
+        android:id="@+id/pecatorrepreto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/torre_preto" />
+
+    <!--PEÇAS PRETAS MENORES -->
+    <ImageView
+        android:id="@+id/pecapeaopreto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_preto" />
+
+    <ImageView
+        android:id="@+id/pecapeaopreto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_preto" />
+
+    <ImageView
+        android:id="@+id/pecapeaopreto3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_preto" />
+
+    <ImageView
+        android:id="@+id/pecapeaopreto4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_preto" />
+
+    <ImageView
+        android:id="@+id/pecapeaopreto5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_preto" />
+
+    <ImageView
+        android:id="@+id/pecapeaopreto6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_preto" />
+
+    <ImageView
+        android:id="@+id/pecapeaopreto7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_preto" />
+
+    <ImageView
+        android:id="@+id/pecapeaopreto8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_preto" />
+
+    <!-- PECAS BRANCAS MENORES  -->
+
+    <ImageView
+        android:id="@+id/pecapeaobranco1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_branco" />
+
+    <ImageView
+        android:id="@+id/pecapeaobranco2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_branco" />
+
+    <ImageView
+        android:id="@+id/pecapeaobranco3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_branco" />
+
+    <ImageView
+        android:id="@+id/pecapeaobranco4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_branco" />
+
+    <ImageView
+        android:id="@+id/pecapeaobranco5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_branco" />
+
+    <ImageView
+        android:id="@+id/pecapeaobranco6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_branco" />
+
+    <ImageView
+        android:id="@+id/pecapeaobranco7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_branco" />
+
+    <ImageView
+        android:id="@+id/pecapeaobranco8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/peao_branco" />
+
+    <!-- PECAS BRANCAS MAIORES  -->
+    <ImageView
+        android:id="@+id/pecatorrebranco1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/torre_branco" />
+
+    <ImageView
+        android:id="@+id/pecacavalobranco1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cavalo_branco" />
+
+    <ImageView
+        android:id="@+id/pecabispobranco1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bispo_branco" />
+
+    <ImageView
+        android:id="@+id/pecadamabranco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dama_branco" />
+
+    <ImageView
+        android:id="@+id/pecareibranco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rei_branco" />
+
+    <ImageView
+        android:id="@+id/pecabispobranco2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bispo_branco" />
+
+    <ImageView
+        android:id="@+id/pecacavalobranco2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cavalo_branco" />
+
+    <ImageView
+        android:id="@+id/pecatorrebranco2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/torre_branco" />
+
+    <ImageView
+        android:id="@+id/quadrado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quadrado" />
+
+    <ImageView
+        android:id="@+id/quadrado2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quadrado" />
+
+
+    <ImageView
+        android:id="@+id/retangulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/retangulo" />
+
+    <ImageView
+        android:id="@+id/torreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onTorreClicked"
+        android:src="@drawable/torre_preto" />
+
+    <ImageView
+        android:id="@+id/bispoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBispoClicked"
+        android:src="@drawable/bispo_preto" />
+
+    <ImageView
+        android:id="@+id/cavaloButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCavaloClicked"
+        android:src="@drawable/cavalo_preto" />
+
+    <ImageView
+        android:id="@+id/damaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDamaClicked"
+        android:src="@drawable/dama_preto" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

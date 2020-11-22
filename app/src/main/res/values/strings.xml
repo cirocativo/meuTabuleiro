@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_app">Vyrus Chess</string>
+    <string name="title_activity_connect_test">ConnectTestActivity</string>
+    <string name="title_activity_voujaexcluir">VoujaexcluirActivity</string>
+</resources>
