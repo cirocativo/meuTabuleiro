@@ -1,10 +1,10 @@
 # App Meu Tabuleiro
 > Aplicativo Android que conecta o tabuleiro físico de xadrez automatizado com uma inteligência artificial, ou com alguém na internet, para jogar online
 
-O projeto foi criado com a ideia de se jogar xadrez através de um tabuleiro real contra uma engine, ou contra qualquer pessoa no mundo, através do [Lichess](https://lichess.org/).
+O projeto foi criado através do Android Studio. Pode ser jogado localmente contra a engine, ou contra qualquer pessoa do mundo através do [Lichess](https://lichess.org/).
 O Aplicativo foi feito unicamente para desenvolvimento, portanto não é tão prático para usuários comuns.
 
-Ele se conecta ao tabuleiro através de uma conexão wi-fi. Possui um tabuleiro virtual, e mostra em tempo real as jogadas tanto do adversário, quanto do tabuleiro em questão.
+Ele se conecta ao tabuleiro [(esp-8266)](https://www.baudaeletronica.com.br/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/n/o/nodemcu_1_1.jpg) através de uma conexão wi-fi. Possui um tabuleiro virtual, e mostra em tempo real as jogadas tanto do adversário, quanto do tabuleiro em questão.
 
 É através do aplicativo que todas as jogadas são verificadas se são legais ou não. 
 
